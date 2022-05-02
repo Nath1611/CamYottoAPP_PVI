@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CamYottoAPP.Views.MyAddProductoPage"
+             BackgroundImageSource="appwall">
+    <ContentPage.Content>
+
+        <ScrollView>
+
+            <StackLayout>
+                <Label Text="Agregar Producto"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="40"
+                   Padding="10,100,20,50"
+                   TextColor="Brown"/>
+
+                <StackLayout Padding="20,50,20,300">
+                    <Entry x:Name="TxtProductoId" Placeholder="Código" FontSize="Large" TextColor="Brown" />
+                    <Entry x:Name="TxtProductoDetalle" Placeholder="Detalle del producto" FontSize="Large" TextColor="Brown" />
+                    <Entry x:Name="TxtValor" Placeholder="Valor" FontSize="Large" TextColor="Brown" />
+
+                    <StackLayout Padding="50,50,50,50">
+                        <Button x:Name="BtnAddPedido" Text="Agregar" HeightRequest="70" BackgroundColor="#CBAF96" Opacity="0.7"/>
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
+

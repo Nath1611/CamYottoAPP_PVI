@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CamYottoAPP.Views.ActionsPage"
+             BackgroundImageSource="appwall">
+    <ContentPage.Content>
+        <ScrollView>
+            <!--existen varias formas de llegar a una solucion, en este caso se usa un grid 
+            con botones para ofrecer al usuario las distintas funcionalidades del APP
+            Tambien es perfectamente valido usar por ejemplo un + en la esquina inferior derecha
+            (siguiendo un formato similar de google) -->
+
+            <FlexLayout>
+                <!--**para este texto buscar forma de dar mensaje de bienvenida dependiendo de la hora**-->
+                <StackLayout >
+                    <Label Text="¡WELCOME!"
+                       VerticalOptions="Start"
+                       HorizontalOptions="CenterAndExpand"
+                       HorizontalTextAlignment="Start"
+                       FontSize="40"
+                       Padding="0,70,10,0"
+                       TextColor="Brown"/>
+                    
+                    <Label Text="Select an Action"
+                       VerticalOptions="Start"
+                       HorizontalOptions="CenterAndExpand"
+                       HorizontalTextAlignment="Start"
+                       FontSize="40"
+                       Padding="0,20,10,0"
+                       TextColor="Brown"/>
+
+                    <FlexLayout Wrap="Wrap" 
+                            JustifyContent="Start"
+                            Direction="Row" Padding="0,0,0,0" 
+                            AlignContent="Start"
+                            Background="azure"
+                            Margin="0,50,0,10">
+                    </FlexLayout>
+
+                    <Button x:Name="BtnActionsPedido" 
+                        Text="PEDIDOS"
+                        BackgroundColor="Beige"
+                        TextColor="Brown"
+                        Opacity="0.5"
+                        HeightRequest="100"
+                        WidthRequest="3000"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        CornerRadius="10"
+                        Margin="30,5,30,5"
+                        Clicked="BtnActionsPedido_Clicked"
+                        />
+                    <Button x:Name="BtnActionsProducto" 
+                        Text="PRODUCTOS"
+                        BackgroundColor="Beige"
+                        TextColor="Brown"
+                        Opacity="0.5"
+                        HeightRequest="100"
+                        WidthRequest="3000"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        CornerRadius="10"
+                        Margin="30,5,30,5"
+                        Clicked="BtnActionsProducto_Clicked"
+                        />
+                    <Button x:Name="BtnActionsCliente" 
+                        Text="CLIENTES"
+                        BackgroundColor="Beige"
+                        TextColor="Brown"
+                        Opacity="0.5"
+                        HeightRequest="100"
+                        WidthRequest="3000"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        CornerRadius="10"
+                        Margin="30,5,30,5"
+                        Clicked="BtnActionsCliente_Clicked"
+                        />
+                    <Button x:Name="BtnActionsMaquinaria" 
+                        Text="MAQUINARIA"
+                        BackgroundColor="Beige"
+                        TextColor="Brown"
+                        Opacity="0.5"
+                        HeightRequest="100"
+                        WidthRequest="3000"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        CornerRadius="10"
+                        Margin="30,5,30,5"
+                        Clicked="BtnActionsMaquinaria_Clicked"/>
+
+                    <Label Text=""
+                       VerticalOptions="Start"
+                       HorizontalOptions="CenterAndExpand"
+                       HorizontalTextAlignment="Start"
+                       FontSize="40"
+                       Padding="0,20,10,0"
+                       TextColor="Brown"/>
+
+                    <Button x:Name="BtnActionsConfig" 
+                        Text="CONFIGURACIONES"
+                        BackgroundColor="Beige"
+                        TextColor="Brown"
+                        Opacity="0.5"
+                         HeightRequest="100"
+                        WidthRequest="3000"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        CornerRadius="10"
+                        Margin="30,5,30,5"/>
+                </StackLayout>
+
+            </FlexLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+
+<!--<Button x:Name="BtnAddPedido" 
+                        Text="Agregar Pedido"
+                        BackgroundColor="Beige"
+                        TextColor="Brown"
+                        Opacity="0.5"
+                        HeightRequest="100"
+                        WidthRequest="3000"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        CornerRadius="10"
+                        Margin="30,5,30,5"
+                        Clicked="BtnAddPedido_Clicked"
+                        />
+<Button x:Name="BtnAddProducto" 
+                        Text="Agregar Producto"
+                        BackgroundColor="Beige"
+                        TextColor="Brown"
+                        Opacity="0.5"
+                        HeightRequest="100"
+                        WidthRequest="3000"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        CornerRadius="10"
+                        Margin="30,5,30,5"
+                        Clicked="BtnAddProducto_Clicked"
+                        />
+<Button x:Name="BtnViewProducto" 
+                        Text="Ver mis Productos"
+                        BackgroundColor="Beige"
+                        TextColor="Brown"
+                        Opacity="0.5"
+                        HeightRequest="100"
+                        WidthRequest="3000"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        CornerRadius="10"
+                        Margin="30,5,30,5"
+                        Clicked="BtnViewProducto_Clicked"
+                        />
+<Button x:Name="BtnViewPedido" 
+                        Text="Ver Pedidos"
+                        BackgroundColor="Beige"
+                        TextColor="Brown"
+                        Opacity="0.5"
+                        HeightRequest="100"
+                        WidthRequest="3000"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        CornerRadius="10"
+                        Margin="30,5,30,5"
+                        Clicked="BtnViewPedido_Clicked"
+                        />-->

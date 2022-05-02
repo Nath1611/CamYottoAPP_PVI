@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CamYottoAPP.Views.ActionsClientePage"
+             BackgroundImageSource="appwall">
+    <ContentPage.Content>
+        <StackLayout>
+            <FlexLayout>
+                <StackLayout Padding="0,0,0,0">
+                    <Label Text="ACCIONES PARA CLIENTES"
+                       VerticalOptions="Center"
+                       HorizontalOptions="CenterAndExpand"
+                       HorizontalTextAlignment="Start"
+                       FontSize="40"
+                       Padding="50,20,0,0"
+                       TextColor="Brown"/>
+
+                    <FlexLayout Wrap="Wrap" 
+                            JustifyContent="Start"
+                            Direction="Row" Padding="0,0,0,0" 
+                            AlignContent="Start"
+                            Background="azure"
+                            Margin="0,50,0,10">
+                    </FlexLayout>
+
+                    <Button x:Name="BtnAddCliente" 
+                        Text="Agregar Cliente"
+                        BackgroundColor="Beige"
+                        TextColor="Brown"
+                        Opacity="0.5"
+                        HeightRequest="100"
+                        WidthRequest="3000"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        CornerRadius="10"
+                        Margin="30,5,30,5"/>
+                    
+                    <Button x:Name="BtnViewCliente" 
+                        Text="Ver Clientes"
+                        BackgroundColor="Beige"
+                        TextColor="Brown"
+                        Opacity="0.5"
+                        HeightRequest="100"
+                        WidthRequest="3000"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        CornerRadius="10"
+                        Margin="30,5,30,5"/>
+                </StackLayout>
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

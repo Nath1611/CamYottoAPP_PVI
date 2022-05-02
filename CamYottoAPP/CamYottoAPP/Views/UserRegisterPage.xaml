@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CamYottoAPP.Views.UserRegisterPage"
+             BackgroundImageSource="appwall">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <FlexLayout AlignContent="Center" WidthRequest="200" HeightRequest="200" Padding="120,50,20,20">
+                <Image Scale="1.3" Source="IconAddUser" HeightRequest="150" HorizontalOptions="Center" WidthRequest="150"/>
+            </FlexLayout>
+
+            <StackLayout Padding="20,0,20,20">
+                <Entry x:Name="TxtUserId" Placeholder="UserId" FontSize="Large" TextColor="Brown" />
+                <Entry x:Name="TxtUserName" Placeholder="UserName" FontSize="Large" TextColor="Brown" />
+                <Entry x:Name="TxtPhone" Placeholder="Phone" FontSize="Large" TextColor="Brown" Keyboard="Telephone" />
+                <Entry x:Name="TxtEmail" Placeholder="Email" FontSize="Large" TextColor="Brown" Keyboard="Email"/>
+            </StackLayout>
+            <!--<Entry x:Name="TxtCedula" Placeholder="Cedula" FontSize="Large" TextColor="Brown" Keyboard="Telephone"/>-->
+
+            <StackLayout Orientation="Horizontal" Spacing="0" Padding="20,0,0,0">
+                <Entry x:Name="TxtUserPass" WidthRequest="330" Placeholder="UserPassword" IsPassword="True" FontSize="Large" TextColor="Brown" />
+                <Switch x:Name="SwSeePass" IsToggled="false" Toggled="CmdSeePass" OnColor="Brown"/>
+            </StackLayout>
+
+            <FlexLayout AlignContent="Center" Padding="100,40,50,100">
+                <StackLayout IsClippedToBounds="True" Orientation="Horizontal" HorizontalOptions="End" Spacing="20">
+                    <Button x:Name="BtnAdd" Text="Agregar" WidthRequest="180" Padding="10,0,10,0" Clicked="BtnAdd_Clicked" BackgroundColor="#CBAF96"/>
+                    <!--<Button x:Name="BtnCancel" Text="Cancelar" WidthRequest="180" Padding="10,0,10,0" Clicked="BtnCancel_Clicked"/>-->
+                </StackLayout>
+            </FlexLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

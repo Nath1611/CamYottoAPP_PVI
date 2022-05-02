@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CamYottoAPP.Views.LoginPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundImageSource="appwall"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+
+        <StackLayout Padding="50,50,50,0" >
+
+            <FlexLayout AlignContent="Center" Padding="70,100,0,0" >
+                <Image Scale="5" Source="CamYotto" HeightRequest="50" WidthRequest="150" />
+            </FlexLayout>
+
+            <StackLayout Orientation="Horizontal" Spacing="50" Padding="20,150,0,0">
+                <Entry x:Name="TxtUserName" Placeholder="Username" FontSize="Large" TextColor="Brown" WidthRequest="250" Keyboard="Email"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Spacing="10" Padding="20,0,20,0">
+                <Entry x:Name="TxtPassword" IsPassword="True" Placeholder="Password" FontSize="Large" TextColor="Brown" WidthRequest="210" Keyboard="Chat"/>
+                <Switch x:Name="SwSeePass" IsToggled="false" Toggled="CmdSeePass" OnColor="Brown"/>
+            </StackLayout>
+
+            <Label Text=""
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       FontSize="40"/>
+            
+            <Button x:Name="BtnLogin" VerticalOptions="Center" Text="Ingresar" FontSize="Large" CornerRadius="5" TextColor="Brown" BackgroundColor="Beige" Opacity="0.5" Clicked="BtnLogin_Clicked"/>
+            <Button x:Name="BtnRegister" VerticalOptions="Center" Text="Registrar" FontSize="Medium" CornerRadius="5" TextColor="Brown" BackgroundColor="Beige" Opacity="0.5" Clicked="CmdUserRegister"/>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
+
+<!--<StackLayout Padding="50,70,50,0" VerticalOptions="Center">
+
+    <FlexLayout AlignContent="Center" Padding="0,0,0,0" >
+        <Image Scale="2" Source="CamYotto" HeightRequest="0" WidthRequest="150" />
+    </FlexLayout>
+
+    <Entry x:Name="TxtUserName" Placeholder="Username" FontSize="Large" TextColor="Brown"/>
+
+
+    <StackLayout Orientation="Horizontal" Spacing="10" Padding="0,0,20,0">
+        <Entry x:Name="TxtPassword" IsPassword="True" Placeholder="Password" FontSize="Large" TextColor="Brown"/>
+        <Switch x:Name="SwSeePass" IsToggled="false" Toggled="CmdSeePass" OnColor="Brown"/>
+    </StackLayout>
+
+    <Button x:Name="BtnLogin" VerticalOptions="Center" Text="Ingresar" FontSize="Large" CornerRadius="5" TextColor="Brown" BackgroundColor="Beige" Opacity="0.5" Clicked="BtnLogin_Clicked"/>
+    <Button x:Name="BtnRegister" VerticalOptions="Center" Text="Registrar" FontSize="Medium" CornerRadius="5" TextColor="Brown" BackgroundColor="Beige" Opacity="0.5" Clicked="CmdUserRegister"/>
+</StackLayout> -->
+
+<!--<FlexLayout AlignContent="Center" Padding="100,40,50,100">
+    <StackLayout IsClippedToBounds="True" Orientation="Horizontal" HorizontalOptions="End" Spacing="20">
+         <Button x:Name="BtnLogin" VerticalOptions="Center" Text="Ingresar" FontSize="Large" CornerRadius="5" TextColor="Brown" BackgroundColor="Beige" Opacity="0.5" Clicked="BtnLogin_Clicked"/>
+    <Button x:Name="BtnRegister" VerticalOptions="Center" Text="Registrar" FontSize="Medium" CornerRadius="5" TextColor="Brown" BackgroundColor="Beige" Opacity="0.5" Clicked="CmdUserRegister"/>
+    </StackLayout>
+</FlexLayout>-->
